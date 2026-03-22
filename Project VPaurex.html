@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VP Brand</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>VP Brand</h1>
+<p>Premium Gifts, Albums & School Products</p>
+</header>
+
+<section class="products">
+<h2>Our Products</h2>
+<p>Photo Albums | Gift Items | School Products</p>
+</section>
+
+<button onclick="hello()">Click Me</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+body{
+    background:black;
+    color:gold;
+    font-family:Arial;
+    text-align:center;
+    }
+    
+    header{
+    padding:40px;
+    }
+    
+    h1{
+    font-size:50px;
+    }
+    
+    button{
+    padding:10px 20px;
+    background:gold;
+    border:none;
+    cursor:pointer;
+    }
+    function hello(){
+        alert("Welcome to VP Brand Website");
+        }
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VP Brand</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+<h1>VP Brand</h1>
+<ul>
+<li>Home</li>
+<li>Products</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+<header>
+<h2>Premium Gifts & Albums</h2>
+<p>Royal Quality Products</p>
+</header>
+
+<section class="products">
+
+<div class="card">
+<h3>Photo Album</h3>
+<p>Premium Wedding Album</p>
+<button>Order</button>
+</div>
+
+<div class="card">
+<h3>Gift Box</h3>
+<p>Luxury Gift Packing</p>
+<button>Order</button>
+</div>
+
+<div class="card">
+<h3>School Products</h3>
+<p>Notebook & Stationery</p>
+<button>Order</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+body{
+    margin:0;
+    background:black;
+    color:gold;
+    font-family:Arial;
+    text-align:center;
+    }
+    
+    nav{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    background:#111;
+    }
+    
+    nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    }
+    
+    header{
+    padding:60px;
+    }
+    
+    .products{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+    }
+    
+    .card{
+    background:#111;
+    padding:20px;
+    width:200px;
+    border-radius:10px;
+    }
+    
+    button{
+    background:gold;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+    }
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VP Brand</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+<h1 class="logo">VP Brand</h1>
+
+<ul class="menu">
+<li>Home</li>
+<li>Products</li>
+<li>About</li>
+<li>Contact</li>
+</ul>
+</nav>
+
+
+<section class="hero">
+
+<h2>Royal Premium Products</h2>
+<p>Albums • Gift Boxes • School Products</p>
+
+<button class="shop-btn">Shop Now</button>
+
+</section>
+
+
+<section class="products">
+
+<h2>Our Products</h2>
+
+<div class="product-container">
+
+<div class="card">
+<h3>Photo Album</h3>
+<p>Luxury Wedding Album</p>
+<button>Order</button>
+</div>
+
+<div class="card">
+<h3>Gift Box</h3>
+<p>Premium Gift Packaging</p>
+<button>Order</button>
+</div>
+
+<div class="card">
+<h3>School Kit</h3>
+<p>Notebook & Stationery</p>
+<button>Order</button>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="about">
+
+<h2>About VP Brand</h2>
+
+<p>
+VP Brand provides premium quality albums,
+gift packaging and school products.
+Our mission is to deliver royal quality products
+to customers.
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 VP Brand | All Rights Reserved</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+body{
+    margin:0;
+    font-family:Arial;
+    background:black;
+    color:white;
+    }
+    
+    
+    .navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:#111;
+    }
+    
+    .logo{
+    color:gold;
+    }
+    
+    .menu{
+    list-style:none;
+    display:flex;
+    gap:20px;
+    }
+    
+    .menu li{
+    cursor:pointer;
+    }
+    
+    
+    .hero{
+    text-align:center;
+    padding:100px 20px;
+    background:linear-gradient(black,#111);
+    }
+    
+    .hero h2{
+    font-size:40px;
+    color:gold;
+    }
+    
+    .shop-btn{
+    background:gold;
+    border:none;
+    padding:12px 25px;
+    margin-top:20px;
+    cursor:pointer;
+    font-size:16px;
+    }
+    
+    
+    .products{
+    padding:60px 20px;
+    text-align:center;
+    }
+    
+    .product-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    }
+    
+    .card{
+    background:#111;
+    padding:25px;
+    width:220px;
+    border-radius:10px;
+    transition:0.3s;
+    }
+    
+    .card:hover{
+    transform:scale(1.05);
+    }
+    
+    .card button{
+    background:gold;
+    border:none;
+    padding:10px 15px;
+    cursor:pointer;
+    margin-top:10px;
+    }
+    
+    
+    .about{
+    padding:60px;
+    text-align:center;
+    background:#111;
+    }
+    
+    footer{
+    text-align:center;
+    padding:20px;
+    background:black;
+    border-top:1px solid #333;
+    }
+    [8:43 AM, 3/9/2026] [Prashant^yadav]: <section class="products">
+
+        <h2>Our Products</h2>
+        
+        <div class="product-container">
+        
+        <div class="card">
+        <img src="images/album.jpg">
+        <h3>Photo Album</h3>
+        <p>Luxury Wedding Album</p>
+        
+        <a href="https://wa.me/91XXXXXXXXXX">
+        <button>Order on WhatsApp</button>
+        </a>
+        
+        </div>
+        
+        <div class="card">
+        <img src="images/gift.jpg">
+        <h3>Gift Box</h3>
+        <p>Premium Gift Packaging</p>
+        
+        <a href="https://wa.me/91XXXXXXXXXX">
+        <button>Order on WhatsApp</button>
+        </a>
+        
+        </div>
+        
+        <div class="card">
+        <img src="images/school.jpg">
+        <h3>School Kit</h3>
+        <p>Notebook & Stationery</p>
+        
+        <a href="https://wa.me/91XXXXXXXXXX">
+        <button>Order on WhatsApp</button>
+        </a>
+        
+        </div>
+        
+        </div>
+        
+        </section>
+        [8:43 AM, 3/9/2026] [Prashant^yadav]: <section class="order">
+        
+        <h2>Place Order</h2>
+        
+        <form id="orderForm">
+        
+        <input type="text" placeholder="Your Name" id="name" required>
+        
+        <input type="text" placeholder="Product Name" id="product" required>
+        
+        <input type="text" placeholder="Address" id="address" required>
+        
+        <button type="submit">Submit Order</button>
+        
+        </form>
+        
+        </section>
+        [8:44 AM, 3/9/2026] [Prashant^yadav]: <!DOCTYPE html>
+        <html>
+        
+        <head>
+        <title>VP Admin</title>
+        </head>
+        
+        <body>
+        
+        <h2>Customer Orders</h2>
+        
+        <ul id="orders"></ul>
+        
+        <script>
+        
+        let orders = JSON.parse(localStorage.getItem("orders")) || []
+        
+        let list = document.getElementById("orders")
+        
+        orders.forEach(order=>{
+        let li = document.createElement("li")
+        li.textContent = order.name + " ordered " + order.product
+        list.appendChild(li)
+        })
+        
+        </script>
+        
+        </body>
+        </html>
+        document.getElementById("orderForm").addEventListener("submit",function(e){
+
+            e.preventDefault()
+            
+            let name=document.getElementById("name").value
+            let product=document.getElementById("product").value
+            let address=document.getElementById("address").value
+            
+            let orders=JSON.parse(localStorage.getItem("orders"))||[]
+            
+            orders.push({name,product,address})
+            
+            localStorage.setItem("orders",JSON.stringify(orders))
+            
+            alert("Order Submitted")
+            
+            })
+            img{
+                width:100%;
+                border-radius:10px;
+                }
+                
+                input{
+                display:block;
+                margin:10px auto;
+                padding:10px;
+                width:250px;
+                }
+                
+                @media(max-width:768px){
+                
+                .product-container{
+                flex-direction:column;
+                align-items:center;
+                }
+                
+                }
+    
+        
+

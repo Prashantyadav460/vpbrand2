@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Cart</title>
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<ul id="cartItems"></ul>
+
+<h2 id="total"></h2>
+
+<script>
+
+let cart = JSON.parse(localStorage.getItem("cart")) || []
+
+let list = document.getElementById("cartItems")
+
+let total = 0
+
+cart.forEach(item => {
+
+let li = document.createElement("li")
+
+li.textContent = item.name + " - ₹" + item.price
+
+list.appendChild(li)
+
+total += item.price
+
+})
+
+document.getElementById("total").textContent = "Total: ₹" + total
+
+</script>
+
+</body>
+
+</html>
+<li><a href="cart.html">Cart</a></li>
+<a href="https://wa.me/9415693114">
+    <button>Order on WhatsApp</button>
+    </a>
+    <a href="upi://pay?pa=yourupi@upi&pn=VPBrand&cu=INR">
+        <button>Pay with UPI</button>
+        </a>
+        <button onclick="alert('Order Placed Successfully')">
+            Checkout
+            </button>
+            <!DOCTYPE html>
+<html>
+<head>
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <a href=VP.html>Back to Home</a>
+    </nav>
+
+    <h1>Your Shopping Cart</h1>
+    <div id="cart-items"></div>
+    <h2 id="total"></h2>
+
+    <button onclick="window.location.href='https://wa.me/yournumber'">Order on WhatsApp</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Cart</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+<h1>Your Cart</h1>
+
+<div id="cart-items"></div>
+
+<h2 id="total"></h2>
+
+<a href="VP.html">
+<button>Continue Shopping</button>
+</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<button onclick="clearCart()">Clear Cart</button>
+<h1>Your Cart</h1>
+
+<div id="cart-items"></div>
+
+<h2 id="total"></h2>
+
+<a href="VP.html">
+<button>Back to Home</button>
+</a>
+<a href="checkout.html">
+<button>Checkout</button>
+</a>
+<button onclick="orderWhatsApp()">Order on WhatsApp</button>

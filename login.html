@@ -1,0 +1,51 @@
+<h2>Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+</head>
+
+<body>
+
+<h2>Admin Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+
+<br><br>
+
+<input type="password" id="pass" placeholder="Password">
+
+<br><br>
+
+<button onclick="login()">Login</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+<script>
+
+function adminLogin(){
+
+let user = document.getElementById("adminuser").value;
+let pass = document.getElementById("adminpass").value;
+
+if(user=="admin" && pass=="1234")
+{
+window.location.href="admin.html";
+}
+else
+{
+alert("Wrong Admin Login");
+}
+
+}
+
+</script>
+<button onclick="adminLogin()">Login</button>

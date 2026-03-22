@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Add Product</title>
+</head>
+
+<body>
+
+<h2>Add Product</h2>
+
+<input id="name" placeholder="Product Name"><br><br>
+<input id="price" placeholder="Price"><br><br>
+
+<button onclick="addProduct()">Add Product</button>
+
+<script>
+
+function addProduct(){
+
+let name=document.getElementById("name").value;
+let price=document.getElementById("price").value;
+
+let product={
+name:name,
+price:price
+}
+
+localStorage.setItem(name,JSON.stringify(product));
+
+alert("Product Added");
+
+}
+
+</script>
+
+</body>
+</html>
